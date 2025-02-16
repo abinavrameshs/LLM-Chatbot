@@ -27,6 +27,11 @@ We require 3 libraries to run this project
 
 - After installing the required packages, run `pdm run streamlit run app.py` to run the streamlit Chatbot app with conversation history
 
+## Demo of the Project
+
+![](https://github.com/abinavrameshs/LLM-Chatbot/blob/main/docs/Cropped%20demo.gif)
+
+
 ## References
 
 - [Google API Docs](https://ai.google.dev/gemini-api/docs/document-processing?lang=python)
