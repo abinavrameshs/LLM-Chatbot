@@ -1,31 +1,52 @@
 # LLM-Chatbot
 
-Application on Streamlit to chat with an LLM.
-Here we use the LLM `gemini-2.0-flash`.
-We can also alternatively use any other LLM as well. This code will work with Google APIs
+Application on Streamlit to chat with an LLM. Here we use the LLM `gemini-2.0-flash`. We can also alternatively use any other LLM as well. This code will work with Google APIs.
+
+## Table of Contents
+
+- [Setup](#setup)
+- [Requirements](#requirements)
+- [Executing the Project](#executing-the-project)
+- [Demo of the Project](#demo-of-the-project)
+- [References](#references)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Setup
 
-This project is initialized using `pdm`. To learn more about `pdm` please refer to [pdm documentation](https://pdm-project.org/en/latest/)
+This project is initialized using `pdm`. To learn more about `pdm` please refer to [pdm documentation](https://pdm-project.org/en/latest/).
 
-- Install `pdm` using the command: `pip install pdm`
-- Then initialize a blank project using the command `pdm init`. This will provide a bunch of prompts to fill, after which a template is created for you.
-
+1. Install `pdm` using the command:
+    ```sh
+    pip install pdm
+    ```
+2. Initialize a blank project using the command:
+    ```sh
+    pdm init
+    ```
+    This will provide a bunch of prompts to fill, after which a template is created for you.
 
 ## Requirements
 
-We require 3 libraries to run this project
-- `streamlit`: For creating our frontend application
-- `google-genai`: For using Google's LLMs (Like Google Pro, Google Flash models)
-- `python-dotenv`: Used to load `.env` files
+We require 3 libraries to run this project:
 
-- You will have to create a `.env` file in the root of your repo and include the following
+- [streamlit](http://_vscodecontentref_/3): For creating our frontend application
+- [google-genai](http://_vscodecontentref_/4): For using Google's LLMs (Like Google Pro, Google Flash models)
+- `python-dotenv`: Used to load [.env](http://_vscodecontentref_/5) files
 
-`GOOGLE_API_KEY = <YOUR_API_KEY>`
+You will have to create a [.env](http://_vscodecontentref_/6) file in the root of your repo and include the following:
+
+```env
+GOOGLE_API_KEY = <YOUR_API_KEY>
+```
 
 ## Executing the project
 
-- After installing the required packages, run `pdm run streamlit run app.py` to run the streamlit Chatbot app with conversation history
+After the required packages, run the following command to start the Streamlit Chatbot app with conversation history:
+
+```python
+pdm run streamlit run app.py
+```
 
 ## Demo of the Project
 
